@@ -1,0 +1,24 @@
+body {
+  border: 1px solid black;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 5%;
+  position: relative;
+  width: 100%;
+}
+span:hover {
+  text-decoration: underline;
+}
+span:hover:before {
+  content: attr(data-line-number);
+}
+span:not(:first-of-type) {
+  color: gray;
+}
+/* app/assets/stylesheets/application.css
+ *
+
+
+ */
+
